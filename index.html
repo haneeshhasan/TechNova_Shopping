@@ -1,13 +1,79 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TechNova - Online Shopping Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">TechNova</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Deals</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="#" class="search-icon"><i class="fas fa-search"></i></a>
+                <a href="#" class="wishlist-icon"><i class="fas fa-heart"></i></a>
+                <a href="#" class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">3</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Welcome to TechNova</h1>
+        <p>Discover Amazing Products at Unbeatable Prices</p>
+        <a href="#" class="hero-btn">Shop Now</a>
+    </section>
+
+    <!-- Product Categories -->
+    <section class="categories">
+        <div class="categories-grid">
+            <div class="category-card">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Smartphones</h3>
+                <p>Latest Mobile Devices</p>
+            </div>
+            <div class="category-card">
+                <i class="fas fa-laptop"></i>
+                <h3>Laptops</h3>
+                <p>Powerful Computing</p>
+            </div>
+            <div class="category-card">
+                <i class="fas fa-headphones-alt"></i>
+                <h3>Accessories</h3>
+                <p>Essential Gadgets</p>
+            </div>
+            <div class="category-card">
+                <i class="fas fa-gamepad"></i>
+                <h3>Gaming</h3>
+                <p>Gaming Gear</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured-products">
+        <div class="products-grid" id="featuredProducts">
+            <!-- Products will be dynamically added by JavaScript -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 TechNova. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
