@@ -1,17 +1,17 @@
 document.addEventListener('DOMContentLoaded', () => {
     const featuredProducts = [
         {
-            name: 'Wireless Headphones',
+            name: 'Wireless Headphones Pro',
             price: 199.99,
             image: '/api/placeholder/250/250'
         },
         {
-            name: 'Smart Watch',
+            name: 'Smart Watch Ultra',
             price: 249.99,
             image: '/api/placeholder/250/250'
         },
         {
-            name: 'Bluetooth Speaker',
+            name: 'Bluetooth Speaker X',
             price: 129.99,
             image: '/api/placeholder/250/250'
         },
@@ -23,6 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
     ];
 
     const productsContainer = document.getElementById('featuredProducts');
+    const cartCount = document.querySelector('.cart-count'); // Complete the selector here
 
     featuredProducts.forEach(product => {
         const productCard = document.createElement('div');
@@ -37,8 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     const addToCartButtons = document.querySelectorAll('.product-btn');
-    const cartCount = document.querySelector('.cart-count');
-    let currentCartCount = 3;
+    let currentCartCount = 3; // Assuming the starting value is 3
 
     addToCartButtons.forEach(button => {
         button.addEventListener('click', () => {

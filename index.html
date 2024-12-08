@@ -11,7 +11,14 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="navbar-container">
-            <div class="logo">TechNova</div>
+            <div class="logo">
+                TechNova
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <ul class="nav-links">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Categories</a></li>
@@ -23,7 +30,7 @@
                 <a href="#" class="wishlist-icon"><i class="fas fa-heart"></i></a>
                 <a href="#" class="cart-icon">
                     <i class="fas fa-shopping-cart"></i>
-                    <span class="cart-count">3</span>
+                    <span class="cart-count">0</span>
                 </a>
             </div>
         </div>
@@ -31,13 +38,16 @@
 
     <!-- Hero Section -->
     <section class="hero">
-        <h1>Welcome to TechNova</h1>
-        <p>Discover Amazing Products at Unbeatable Prices</p>
-        <a href="#" class="hero-btn">Shop Now</a>
+        <div class="hero-content">
+            <h1>Discover Tech Innovation</h1>
+            <p>Cutting-Edge Gadgets, Unbeatable Prices</p>
+            <a href="#featured-products" class="hero-btn">Explore Now</a>
+        </div>
     </section>
 
     <!-- Product Categories -->
     <section class="categories">
+        <h2 class="section-title">Shop by Category</h2>
         <div class="categories-grid">
             <div class="category-card">
                 <i class="fas fa-mobile-alt"></i>
@@ -63,15 +73,59 @@
     </section>
 
     <!-- Featured Products -->
-    <section class="featured-products">
+    <section class="featured-products" id="featured-products">
+        <h2 class="section-title">Featured Products</h2>
         <div class="products-grid" id="featuredProducts">
             <!-- Products will be dynamically added by JavaScript -->
         </div>
     </section>
 
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="newsletter-content">
+            <h2>Stay Updated with Latest Deals</h2>
+            <p>Subscribe to our newsletter and get exclusive offers</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer class="footer">
-        <p>&copy; 2024 TechNova. All Rights Reserved.</p>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Categories</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Customer Service</h4>
+                <ul>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Connect With Us</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 TechNova. All Rights Reserved.</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
