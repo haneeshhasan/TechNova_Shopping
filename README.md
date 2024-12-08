@@ -1,6 +1,6 @@
 # TechNova Shopping
 
-## Description
+## Description (This is new feature testing)
 
 TechNova Shopping is a modern web application that allows users to browse and purchase technology products. The platform features a clean, responsive design with an intuitive user interface focused on providing an excellent shopping experience.
 
