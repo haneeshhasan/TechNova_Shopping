@@ -15,7 +15,7 @@ TechNova Shopping is a modern web application that allows users to browse and pu
 - Shopping cart with real-time updates
 - Mobile-friendly design
 
-## Technologies Used
+## Technologies Used:
 
 - HTML5
 - CSS3 (with CSS Variables and Flexbox/Grid)
