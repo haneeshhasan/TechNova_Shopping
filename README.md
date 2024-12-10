@@ -1,4 +1,4 @@
-# TechNova Shopping
+# TechNova Shopping:
 
 ## Description (This is new feature testing (dropdown))
 
