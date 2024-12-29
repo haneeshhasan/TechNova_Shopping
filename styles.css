@@ -333,3 +333,61 @@ body {
         margin-bottom: 30px;
     }
 }
+
+/* Add these new styles for the consolation prize cards */
+.prize-card {
+    position: relative;
+    isolation: isolate;
+    backface-visibility: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+
+.prize-card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        45deg,
+        transparent 0%,
+        rgba(255, 255, 255, 0.15) 50%,
+        transparent 100%
+    );
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.prize-card:hover::after {
+    opacity: 1;
+}
+
+.prize-card img {
+    transform-origin: center;
+    will-change: transform;
+}
+
+/* Shimmer effect on hover */
+@keyframes shimmer {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.prize-card:hover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent 0%,
+        rgba(255, 255, 255, 0.2) 50%,
+        transparent 100%
+    );
+    animation: shimmer 1.5s infinite;
+    z-index: 1;
+}
